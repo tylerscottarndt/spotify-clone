@@ -31,14 +31,13 @@ function App() {
                 });
             });
         }
-
-        console.log('I HAVE A TOKEN>>> ', token);
     }, []);
 
-    console.log('USER >>>> ', user);
-    console.log('TOKEN >>>> ', token);
-
-    return <div className="app">{token ? <Player /> : <Login />}</div>;
+    return (
+        <div className="app">
+            {token ? <Player spotify={spotify} /> : <Login />}
+        </div>
+    );
 }
 
 export default App;
