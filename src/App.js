@@ -30,6 +30,14 @@ function App() {
                     user: user,
                 });
             });
+
+            // returns a promise, add user playlists to the data layer
+            spotify.getUserPlaylists().then((playlists) => {
+                dispatch({
+                    type: 'SET_PLAYLISTS',
+                    playlists: playlists,
+                });
+            });
         }
     }, []);
 
