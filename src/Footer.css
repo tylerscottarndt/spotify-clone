@@ -7,17 +7,30 @@
     width: calc(99vw - 20px);
     margin: 0 auto;
     background-color: #282828;
+    color: #b3b3b3;
     padding: 20px;
-    color: white;
 }
 
 .footer__left {
     flex: 0.3;
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.footer__songInfo > h4 {
+    color: white;
+}
+
+.footer__albumLogo {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    margin-right: 20px;
 }
 
 .footer__center {
     flex: 0.4;
-    color: #b3b3b3;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,5 +42,4 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #b3b3b3;
 }
