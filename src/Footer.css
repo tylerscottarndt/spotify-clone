@@ -60,6 +60,7 @@
     justify-content: space-between;
 }
 
+/* slider */
 .footer__right * .MuiSlider-root {
     color: #1ed15e;
 }
