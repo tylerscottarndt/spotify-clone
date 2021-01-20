@@ -20,6 +20,11 @@
 
 .footer__songInfo > h4 {
     color: white;
+    margin-bottom: 5px;
+}
+
+.footer__songInfo > p {
+    font-size: 12px;
 }
 
 .footer__albumLogo {
@@ -37,9 +42,24 @@
     max-width: 300px;
 }
 
+.footer__green {
+    color: #1ed15e;
+}
+
+.footer__icon:hover,
+.footer__green:hover {
+    transition: transform 0.2s ease-in-out;
+    /* material ui is overriding */
+    transform: scale(1.2) !important;
+}
+
 .footer__right {
     flex: 0.3;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.footer__right * .MuiSlider-root {
+    color: #1ed15e;
 }

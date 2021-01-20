@@ -30,7 +30,7 @@ function Footer() {
                     className="footer__icon"
                     style={{ fontSize: 45 }}
                 />
-                <SkipNextIcon className="footer_icon" />
+                <SkipNextIcon className="footer__icon" />
                 <RepeatIcon className="footer__green" />
             </div>
             <div className="footer__right">
