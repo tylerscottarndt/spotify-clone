@@ -1,0 +1,68 @@
+.body {
+    flex: 0.9;
+    color: white;
+    padding: 30px;
+    overflow-y: overlay;
+    background: linear-gradient(rgb(237, 142, 182), rgba(0, 0, 0, 1));
+
+    /* account for footer height */
+    padding-bottom: 100px;
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.body__info {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.body__info > img {
+    max-height: 232px;
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__infoText {
+    flex: 1;
+}
+
+.body__infoText > h2 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.body__infoText {
+    font-size: 14px;
+}
+
+.body__songs {
+    margin: 20px -30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), #121212);
+    isolation: isolate;
+}
+
+.body__icons {
+    display: flex;
+    align-items: center;
+}
+
+/* targeting material-ui icons root class */
+.body__icons > .MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.body__shuffle {
+    font-size: 80px !important;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body__shuffle:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}

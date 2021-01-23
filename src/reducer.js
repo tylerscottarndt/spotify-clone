@@ -1,0 +1,45 @@
+// initial state of the data layer
+export const initialState = {
+    user: null,
+    playlists: [],
+    playing: false,
+    item: null,
+    token: null,
+    discover_weekly: null,
+};
+
+// action is how we manipulate the state
+const reducer = (state, action) => {
+    console.log(action);
+
+    // action has two things: type, [payload]
+    switch (action.type) {
+        case 'SET_USER':
+            return {
+                // without this spread operator, you will override everything in the current state
+                ...state,
+                // here, we are saying we only want to override the 'user' property of the state
+                user: action.user,
+            };
+        case 'SET_TOKEN':
+            return {
+                ...state,
+                token: action.token,
+            };
+        case 'SET_PLAYLISTS':
+            return {
+                ...state,
+                playlists: action.playlists,
+            };
+        case 'SET_DISCOVER_WEEKLY':
+            return {
+                ...state,
+                discover_weekly: action.discover_weekly,
+            };
+
+        default:
+            return state;
+    }
+};
+
+export default reducer;

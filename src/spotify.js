@@ -28,7 +28,7 @@ export const getTokenFromUrl = () => {
     // window.location returns the URL of the current page
     // the .hash returns everything after the '#' in the URL
     return window.location.hash
-        .substring(1, window.location.hash.indexOf('&')) // this basically removes the hash from the anchor, by taking everything from position 1, inclusive, onward to the end
+        .substring(1) // this basically removes the hash from the anchor, by taking everything from position 1, inclusive, onward to the end
         .split('&') // gives us array of all the params in the form ["key=value", ... ]
         .reduce((initial, item) => {
             // initial = initial value of the reduce (i.e. accumulator)
