@@ -13,7 +13,8 @@ function Sidebar() {
         <div className="sidebar">
             <img
                 className="sidebar__logo"
-                src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
+                // src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
+                src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png"
                 alt=""
             />
             <SidebarOption Icon={HomeIcon} title="Home" />
